@@ -97,3 +97,34 @@
 .nav-links li {
   margin-left: 1rem; /* Espacement réduit entre les liens */
 }
+
+h3 {
+  font-size: 2em;
+}
+h4 {
+  font-size: 1.5em;
+  
+}
+
+h5 {
+  font-size: 1.3em;
+  color:blue;
+}
+.backToTop {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  width: 50px;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba (0, 0, 0, 0);
+  transition: background-color 0.3s;
+}
+.backToTop.show {
+      display: block;
+}

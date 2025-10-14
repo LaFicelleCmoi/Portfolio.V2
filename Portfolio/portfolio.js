@@ -4,35 +4,50 @@ document.addEventListener("DOMContentLoaded", function() {
   const sidenav = document.getElementById("mySidenav");
   const navLinks = document.querySelectorAll(".sidenav a[href^='#']");
 
-  // Ouvre la sidenav
+
   openBtn.onclick = function() {
     sidenav.classList.add("active");
   };
 
-  // Ferme la sidenav
+ 
   closeBtn.onclick = function() {
     sidenav.classList.remove("active");
   };
 
-  // Ferme la sidenav après un clic sur un lien
+  
   navLinks.forEach(link => {
     link.addEventListener("click", function(e) {
-      // Empêche le comportement par défaut du lien
+      
       e.preventDefault();
 
-      // Récupère l'ancre
+      
       const targetId = this.getAttribute("href");
       const targetElement = document.querySelector(targetId);
 
-      // Ferme le menu
+      
       sidenav.classList.remove("active");
 
-      // Défile vers l'ancre après un court délai (pour laisser le temps à la sidenav de se fermer)
+      
       setTimeout(() => {
         if (targetElement) {
           targetElement.scrollIntoView({ behavior: "smooth" });
         }
-      }, 300); // Délai de 300ms pour laisser le temps à l'animation de fermeture
+      }, 300); 
     });
+  });
+});
+
+const backToTopButton = document.getElementById("backToTop");
+window.addEventListener("scroll", function(){
+  if (window.pageYOffset > 300){
+    backToTopButton.classList.add("show");
+  }
+});
+
+backToTopButton.addEventListener("click", function(e) {
+  e.preventDefault();
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
   });
 });
