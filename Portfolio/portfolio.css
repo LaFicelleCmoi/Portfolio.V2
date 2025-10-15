@@ -29,75 +29,173 @@
   margin-bottom: 1rem;
   object-fit: cover; 
 }
-@media screen and (max-width: 900px) {
-    /* portfolio.css */
-.sidenav {
-  width: 100%;
-  height: 0;
-  position: fixed;
-  z-index: 1;
+
+.logo-ferrari {
+  border: none !important;
+  border-radius: 0 !important;
+  width: 10px;
+  height: auto;
+  object-fit: contain;
+  vertical-align: middle;
+  vertical-align: middle;
+  margin: 6px;
+}
+
+.logo-html {
+  border: none !important;
+  border-radius: 0 !important;
+  width: 10px;
+  height: auto;
+  object-fit: contain;
+  vertical-align: middle;
+  vertical-align: middle;
+  margin: 6px;
+}
+
+.logo-css {
+  border: none !important;
+  border-radius: 0 !important;
+  width: 10px;
+  height: auto;
+  object-fit: contain;
+  vertical-align: middle;
+  vertical-align: middle;
+  margin: 6px;
+}
+
+header {
+  background-color: var(--bg-color);
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  position: sticky;
   top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-y: hidden;
-  transition: height 0.5s ease;
+  z-index: 1000;
+  padding: 1rem 0;
 }
 
-.sidenav.active {
-  height: 300px; 
+@media (prefers-color-scheme: dark) {
+  header {
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
 }
 
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 20px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-
-.sidenav .close {
-  position: absolute;
-  top: 10px;
-  right: 25px;
-  font-size: 36px;
-}
-
-
-.burger-icon span {
-    display: block;
-    width: 35px;
-    height: 5px;
-    background-color:white;
-    margin: 6px 0;
-}
-}
-@media screen and (min-width: 900px){
-    .sidenav.close,
-    .closeBtn,
-    [class*="close"],
-    button[aria-label="Close"]{
-        display: none !important;
-    }
-}
 .nav-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 1rem;
 }
 
 
+@media screen and (min-width: 901px) {
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 2rem;
+    align-items: center;
+  }
 
-.nav-links li {
-  margin-left: 1rem; 
+  .nav-links li {
+    margin: 0;
+  }
+
+  .nav-links a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color var(--transition-speed);
+    padding: 0.5rem;
+  }
+
+  .nav-links a:hover {
+    color: var(--accent-color);
+  }
+
+ 
+  .burger-icon,
+  #openBtn {
+    display: none !important;
+  }
+
+  .sidenav {
+    display: block !important;
+    position: static !important;
+    background-color: transparent !important;
+    height: auto !important;
+    width: auto !important;
+  }
+
+  .sidenav .close {
+    display: none !important;
+  }
 }
 
+@media screen and (max-width: 900px) {
+  .sidenav {
+    width: 100%;
+    height: 0;
+    position: fixed;
+    z-index: 1001;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-y: hidden;
+    transition: height 0.5s ease;
+  }
+
+  .sidenav.active {
+    height: 100vh;
+  }
+
+  .nav-links {
+    list-style: none;
+    padding-top: 60px;
+  }
+
+  .sidenav a {
+    padding: 1rem 2rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+
+  .sidenav .close {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 36px;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .burger-icon {
+    cursor: pointer;
+    display: block;
+  }
+
+  .burger-icon span {
+    display: block;
+    width: 35px;
+    height: 5px;
+    background-color: var(--text-color);
+    margin: 6px 0;
+    transition: 0.3s;
+  }
+
+  #openBtn {
+    background: none;
+    border: none;
+    padding: 0;
+  }
+}
 h3 {
   font-size: 2em;
 }
@@ -107,26 +205,16 @@ h4 {
 }
 
 h5 {
-  font-size: 1.3em;
+  font-size: 2em;
   color:yellow;
 }
-.backtotop {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 9999;
-  width: 50px;
-  border: none;
-  border-radius: 50%;
-  color: white;
-  font-size: 24px;
-  cursor: pointer;
-  box-shadow: 0 2px 5px rgba (0, 0, 0, 0);
-  transition: background-color 0.3s;
+
+p {
+  font-size: 1.4em;
 }
-.backtotop.show {
-      display: block;
+
+li {
+  font-size: 1.4em;
 }
 
 :root {
@@ -267,4 +355,8 @@ footer {
   background-color: var(--bg-color);
   border-top: 1px solid rgba(0,0,0,0.1);
   color: var(--text-color);
+}
+
+em {
+  font-style: italic;
 }
