@@ -110,7 +110,7 @@ header {
   }
 
   .nav-links a:hover {
-    color: var(--accent-color);
+    color: blue;
   }
 
  
@@ -359,4 +359,7 @@ footer {
 
 em {
   font-style: italic;
+}
+footer {
+  color: yellow;
 }
