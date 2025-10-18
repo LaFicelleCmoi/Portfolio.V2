@@ -37,15 +37,5 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
-const formData = new FormData();
-formData.append("access_key", "310cc776-2268-49a6-a42e-9076ab3e449b");
-formData.append("name", "John Doe");
-formData.append("email", "john@example.com");
-formData.append("message", "Hello World!");
-
-const response = await fetch("https://api.web3forms.com/submit", {
-  method: "POST",
-  body: formData
-});
 
 
