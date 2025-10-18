@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio - Loïs Clerc</title>
   <link rel="stylesheet" href="portfolio.css">
-  <script src="portfolio.js"></script>
 </head>
 
   <header>
@@ -207,7 +206,7 @@
 
   <section id="contact">
     <h3>Contact</h3>
-    <p>Email : <a href="mailto:lois.clerc@epitech.eu">lois.clerc@epitech.eu</a></p>
+    <p>📧 Email : <a href="mailto:lois.clerc@epitech.eu">lois.clerc@epitech.eu</a></p>
     <p>CV : <a href="assets/CV.pdf" download>CV</a></p>
     <p>Numéro de Téléphone: 07 68 57 51 05</p>
     <p>GitHub : <a href="https://github.com/LaFicelleCmoi/Portfolio.V2">Mon GitHub</a></p>
@@ -215,21 +214,29 @@
     <article>
   <h2>Form</h2>
 
-  <form>
-    <label>Name:</label>
-    <input type="text" required><br><br>
+<form action="https://api.web3forms.com/submit" method="POST" id="form" class="forms">
 
-    <label>First-Name:</label>
-    <input type="text" required><br><br>
+    <input type="hidden" name="access_key" value="310cc776-2268-49a6-a42e-9076ab3e449b">
 
-    <label>Email:</label>
-    <input type="email" required><br><br>
+    <input type="hidden" name="subject" value="New Submission from Web3Forms">
 
-    <label>Question:</label><br>
-    <textarea></textarea><br><br>
 
-    <button>Submit</button>
-  </form>
+    <input type="hidden" name="from_name" value="Your Website Name">
+
+  
+    <input type="hidden" name="redirect" value="https://web3forms.com/success">
+
+
+    <input type="checkbox" name="botcheck" id="" style="display: none;">
+
+
+    <input type="text" name="object" placeholder="Object" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <input type="text" name="message" placeholder="Message" required>
+
+    <button type="submit">Submit Form</button>
+
+</form>
 </article>
   </section>
   <footer>

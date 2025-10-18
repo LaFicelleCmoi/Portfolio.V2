@@ -278,13 +278,13 @@ section:not(:last-child) {
 }
 
 a {
-  color: (--accent-color);
+  color: #cc0055;
   text-decoration: none;
-  transition: color (--transition-speed);
+  transition: color 0.3s ease;
 }
 
 a:hover {
-  color: (--secondary-color);
+  color: #cc0055;
 }
 
 .timeline-item {
@@ -350,7 +350,7 @@ textarea {
 
 input:focus,
 textarea:focus {
-  border-color: (--accent-color);
+  border-color: #cc0055;
   outline: none;
 }
 
@@ -361,7 +361,7 @@ button {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color (--transition-speed);
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
@@ -372,9 +372,9 @@ footer {
   text-align: center;
   padding: 2rem 1rem;
   font-size: 0.9rem;
-  background-color: (--bg-color);
+  background-color: #f8f8f8;
   border-top: 1px solid rgba(0,0,0,0.1);
-  color: (--text-color);
+  color: black;
 }
 
 em {
@@ -406,4 +406,18 @@ nav {
   display: flex;
   height: 100%;
   font-size: 5em;
+}
+[data-theme="dark"] body {
+  background-color: #121212;
+  color: #e0e0e0;
+} 
+
+.forms {
+  background-color: #121212;
+  color: #e0e0e0;
+  border: 1px solid #333;
+  border-radius: 50px;
+  padding: 50px;
+  max-width: 600px;
+  margin: 0 auto;
 }
