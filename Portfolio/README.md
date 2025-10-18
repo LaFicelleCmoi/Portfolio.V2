@@ -1,2 +1,5 @@
-#Portfolio.V2
-Ceci est la deuxième version et un plus pro de mon précédant Portfolio 
+# Portfolio.V2
+
+## Language Utilise
+Comme langue j'ai eu recoure au langage de programmation WEB c'est à dire: HTML, CSS, JavaScript
+
