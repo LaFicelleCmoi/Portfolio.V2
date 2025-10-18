@@ -18,6 +18,28 @@
   z-index: -1;
 }
 
+.formation-content {
+  display: inline-block;
+  background-color: cyan;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.️🚨formation-box {
+  display: inline-block;
+  background-color: #ff0000;
+  color: #ffffff;
+  padding: 1rem;  
+  border-radius: 100%;
+  margin-top: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+.️🚨formation-box a {
+  color: black;
+  text-decoration: underline;
+}
+
 
 #about img {
   max-width: 150px; 
@@ -223,6 +245,10 @@ li {
 
 .skills-list p {
   font-size:  0.9em;
+}
+
+h6 {
+  font-size: 1.2em;
 }
 
 
