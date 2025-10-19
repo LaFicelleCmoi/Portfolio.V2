@@ -265,13 +265,14 @@ section {
   max-width: 1200px;
   margin: 0 auto;
   padding: 3rem 1rem;
+  border-radius: 50px;
 }
 
 section:not(:last-child) {
   border-bottom: 1px solid rgba(0,0,0,0.1);
 }
 
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
   section:not(:last-child) {
     border-bottom: 1px solid rgba(255,255,255,0.1);
   }
@@ -290,21 +291,22 @@ a:hover {
 .timeline-item {
   background-color: cyan;
   padding: 1rem;
-  border-radius: 5px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  border-radius: 50px;
+  box-shadow: 4px 4px 0px #000;
   transition: transform 0.3s ease;
 }
 
 .timeline-item-formation {
   background-color: cyan;
   padding: 1rem;
-  border-radius: 5px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  border-radius: 51px;
+  box-shadow: 4px 4px 0px #000;
   transition: transform 0.3s ease;
 }
 
-.timeline-item:hover {
+.timeline-item-formation:hover {
   transform: translateY(-4px);
+  transform: scale3d(1.2, 1.2, 1);
 }
 
 @media (prefers-color-scheme: light) {
@@ -316,14 +318,15 @@ a:hover {
 .project-card {
   background-color: cyan;
   padding: 1.5rem;
-  border-radius: 5px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  border-radius: 51px;
+  box-shadow: 4px 4px 0px #000000;
   margin-bottom: 2rem;
-  transition: (--transition-speed);
+  transition: box-shadow 0.5s ease;
 }
 
 .project-card:hover {
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transform: translateY(-4px);
+  transform: scale3d(1.2, 1.2, 1);
 }
 
 @media (prefers-color-scheme: light) {
@@ -416,7 +419,7 @@ nav {
   background-color: #010101;
   color: #e0e0e0;
   border: 1px solid #333;
-  border-radius: 100px;
+  border-radius: 51px;
   padding: 50px;
   max-width: 600px;
   margin: 0 auto;
