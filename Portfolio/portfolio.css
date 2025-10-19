@@ -20,7 +20,7 @@
 
 
 
-.️🚨formation-box {
+.️formation-box {
   display: inline-block;
   background-color: #ff0000;
   color: #ffffff;
@@ -30,7 +30,7 @@
   font-weight: bold;
   text-align: center;
 }
-.️🚨formation-box a {
+.formation-box a {
   color: black;
   text-decoration: underline;
 }
