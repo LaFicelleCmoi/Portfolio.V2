@@ -20,20 +20,7 @@
 
 
 
-.️formation-box {
-  display: inline-block;
-  background-color: #ff0000;
-  color: #ffffff;
-  padding: 1rem;  
-  border-radius: 100%;
-  margin-top: 1rem;
-  font-weight: bold;
-  text-align: center;
-}
-.formation-box a {
-  color: black;
-  text-decoration: underline;
-}
+
 
 
 #about img {
