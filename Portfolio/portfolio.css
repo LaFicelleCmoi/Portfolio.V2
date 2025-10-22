@@ -245,7 +245,9 @@ body {
   line-height: 1.6;
   font-size: 16px;
   transition:  0.3s ease;
+ 
 }
+ 
 
 
 section {
@@ -304,11 +306,10 @@ a:hover {
 
 .project-card {
   background-color: cyan;
-  padding: 1.5rem;
+  padding: 1rem;
   border-radius: 51px;
-  box-shadow: 4px 4px 0px #000000;
-  margin-bottom: 2rem;
-  transition: box-shadow 0.5s ease;
+  box-shadow: 4px 4px 0px #000;
+  transition: transform 0.3s ease;
 }
 
 .project-card:hover {
